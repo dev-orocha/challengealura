@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Orbitron-Regular";
+  src: url(../fonts/Orbitron/Orbitron-Regular.ttf);
+}
+
+body {
+  font-family: "Orbitron-Regular";
+  background: #000000;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.box {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  position: relative;
+  bottom: 60px;
+  left: 100px;
+}
+
+.title {
+  display: block;
+  position: relative;
+  color: #ffd700;
+  font-size: 5em;
+  justify-content: center;
+  top: 60px;
+  left: 100px;
+  text-align: center;
+}
+
+.welcome {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 250px 0;
+  justify-content: center;
+  display: flex;
+}
+
+.welcome-title {
+  color: #ffd700;
+  font-size: 4em;
+  padding: 10px 0;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.welcome-btn {
+  display: flex;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  padding: 25px 25px;
+  background: #ffd700;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Orbitron-Regular";
+}
+
+.btn-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.typing {
+  animation: typing 2s steps(40) normal;
+}
+
+.btn {
+  animation: btn 2s steps(40) normal;
+}
+.box .title {
+  animation: title 2s steps(40) normal;
+}
+.box .logo {
+  animation: logo 2s steps(40) normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21em;
+  }
+}
+
+@keyframes btn {
+  from {
+    transform: translateY(350px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes logo {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes title {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.btn:hover {
+  background: DarkGoldenrod;
+  cursor: pointer;
+  transition: 1s all;
+  transform: scale(1.2);
+}
+
+@media (min-width: 375px) {
+  .body-container {
+    max-width: 767px;
+  }
+
+  header {
+    padding: 0 10px;
+  }
+  .box {
+    width: 250px;
+    margin: 0;
+  }
+
+  .logo {
+    left: 60px;
+    top: 10px;
+    width: 50px;
+  }
+
+  .title {
+    position: relative;
+    font-size: 25px;
+    left: 105px;
+    top: 60px;
+  }
+
+  .welcome {
+    width: 100%;
+    padding: 200px 0px;
+  }
+
+  .welcome-title {
+    display: flex;
+    color: #ffd700;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: bold;
+    left: 10px;
+  }
+  .btn:hover {
+    background: DarkGoldenrod;
+    cursor: pointer;
+    transition: 1s all;
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    max-width: 1024px;
+  }
+  .box {
+    width: 500px;
+  }
+
+  .logo {
+    display: flex;
+    width: 80px;
+    position: relative;
+    padding: 15px 0px;
+    left: 155px;
+  }
+
+  .title {
+    font-size: 3em;
+    position: relative;
+    left: 205px;
+    top: 107px;
+  }
+
+  .welcome-title {
+    font-size: 2.2em;
+    bottom: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .body-container {
+    max-width: 1600px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    width: 90px;
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 320px;
+  }
+  .title {
+    display: block;
+    position: relative;
+    color: #ffd700;
+    font-size: 4em;
+    justify-content: center;
+    top: 80px;
+    left: 80px;
+    text-align: center;
+  }
+  .welcome {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 250px 0;
+    justify-content: center;
+    display: flex;
+    bottom: 500px;
+  }
+
+  .welcome-title {
+    color: #ffd700;
+    font-size: 3em;
+    padding: 10px 0;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    top: -50px;
+  }
+  .btn {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background: #ffd700;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Orbitron-Regular";
+    left: 40px;
+    bottom: 120px;
+  }
+}

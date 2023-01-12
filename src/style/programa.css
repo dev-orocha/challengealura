@@ -1,0 +1,620 @@
+@font-face {
+  font-family: "Orbitron-Regular";
+  src: url(../fonts/Orbitron/Orbitron-Regular.ttf);
+}
+
+body {
+  font-family: "Orbitron-Regular";
+  background: #000000;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.box {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  position: relative;
+  bottom: 60px;
+  left: 100px;
+}
+
+.title {
+  display: block;
+  position: relative;
+  color: #ffd700;
+  font-size: 5em;
+  justify-content: center;
+  top: 60px;
+  left: 100px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.input {
+  padding: 10px 30px;
+}
+
+#box-1 {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  font-family: "Orbitron-Regular";
+  font-size: 1.5em;
+  color: white;
+  background: transparent;
+  outline: 2px;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  resize: none;
+  text-transform: uppercase;
+  padding: 5px;
+  user-select: none;
+}
+
+.logo-atention {
+  display: flex;
+  position: relative;
+  width: 30px;
+  padding: 20px 20px;
+}
+
+.atention {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "Verdana";
+  padding: 0px 15px;
+  bottom: 38px;
+}
+
+.container-buttons {
+  width: 940px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: end;
+}
+
+.container-buttons .btn-1,
+.btn-3 {
+  display: block;
+}
+
+.buttons {
+  line-height: 100px;
+}
+
+.btn-1 {
+  position: relative;
+  width: 45%;
+  color: #000000;
+  border: none;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 30px;
+  background: #ffd700;
+  left: 15px;
+  top: 10px;
+}
+.btn-2 {
+  position: relative;
+  width: 45%;
+  color: #000000;
+  border: none;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 30px;
+  background: #ffd700;
+  left: 5px;
+  top: 10px;
+}
+.btn-3 {
+  position: relative;
+  width: 45%;
+  color: #000000;
+  border: none;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 30px;
+  background: #ffd700;
+  left: 15px;
+}
+
+.output {
+  padding: 10px 10px;
+}
+
+#box-2 {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  font-family: "Orbitron-Regular";
+  font-size: 1.5em;
+  color: white;
+  background: transparent;
+  outline: 2px;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  resize: none;
+  text-transform: uppercase;
+  padding: 5px;
+  user-select: none;
+}
+
+#box-1::placeholder {
+  display: flex;
+  text-align: center;
+  top: 100px;
+  position: relative;
+  color: #ffd700;
+  font-size: 1.1em;
+}
+#box-2::placeholder {
+  display: flex;
+  text-align: center;
+  top: 100px;
+  position: relative;
+  color: #ffd700;
+  font-size: 1.1em;
+}
+
+#box-1:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#box-2:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  background: DarkGoldenrod;
+  cursor: pointer;
+  transition: 1s all;
+  transform: scale(1.2);
+}
+
+.footer-container {
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+  border-top: 2px solid #ffd700;
+  top: 200px;
+  width: 100%;
+}
+
+.footer-row {
+  padding: 10px 0;
+}
+
+.footer-copyright {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.footer-developer {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.logo-git {
+  width: 50px;
+  position: relative;
+  left: 350px;
+  bottom: 35px;
+}
+.logo-linkedin {
+  width: 50px;
+  position: relative;
+  left: 360px;
+  bottom: 35px;
+}
+
+@media (min-width: 375px) {
+  body {
+    max-width: 767px;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+  .box {
+    width: 250px;
+    margin: 0;
+  }
+
+  .logo {
+    width: 50px;
+    left: 35px;
+    top: 30px;
+  }
+
+  .title {
+    position: relative;
+    text-align: start;
+    font-size: 1.8em;
+    left: 100px;
+    top: 80px;
+  }
+  .container {
+    width: 300px;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+
+  .input {
+    padding: 60px 45px;
+    margin: 0;
+    width: 300px;
+  }
+
+  #box-1 {
+    width: 300px;
+    height: 300px;
+    top: 30px;
+  }
+  .logo-atention {
+    display: flex;
+    position: relative;
+    width: 30px;
+    top: 35px;
+    right: 20px;
+  }
+
+  .atention {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    color: white;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: "Verdana";
+    bottom: 2px;
+    left: 40px;
+    padding: 0;
+  }
+
+  .output {
+    padding: 0px 45px;
+  }
+  #box-2 {
+    width: 300px;
+    height: 300px;
+  }
+  .container-buttons {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    padding: 0px 0;
+    display: flex;
+  }
+
+  .buttons .btn-1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 40px;
+    left: 75px;
+  }
+  .buttons .btn-2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 80px;
+    left: 75px;
+  }
+  .buttons .btn-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 120px;
+    left: 75px;
+  }
+  #box-1::placeholder {
+    top: 120px;
+  }
+  #box-2::placeholder {
+    top: 120px;
+  }
+  .footer-container {
+    padding: 25px 0;
+    height: 50px;
+  }
+  .footer-copyright {
+    display: block;
+    font-size: 1.2em;
+  }
+  .footer-developer {
+    display: block;
+    font-size: 1.2em;
+    padding: 25px 0;
+  }
+  .logo-git {
+    display: flex;
+    width: 50px;
+    left: 120px;
+    top: 15px;
+    position: relative;
+  }
+  .logo-linkedin {
+    display: flex;
+    width: 50px;
+    left: 220px;
+    top: -35px;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1024px;
+  }
+
+  .box {
+    width: 550px;
+    margin: 0;
+  }
+
+  .logo {
+    width: 60px;
+    top: -10px;
+    position: relative;
+    padding: 15px 0px;
+    left: 130px;
+  }
+
+  .title {
+    font-size: 3.2em;
+    position: relative;
+    top: 70px;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .welcome-title {
+    font-size: 2.2em;
+    bottom: 30px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+  }
+
+  .input {
+    width: 300px;
+    padding: 10px 30px;
+  }
+
+  #box-1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  #box-2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .output {
+    margin: 0;
+    padding: 40px 30px;
+  }
+  .logo-atention {
+    position: relative;
+    width: 30px;
+    top: 32px;
+  }
+  .atention {
+    display: flex;
+    font-size: 9px;
+    right: 60px;
+    bottom: 5px;
+  }
+
+  .container-buttons {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buttons .btn-1 {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  .buttons .btn-2 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    left: 435px;
+  }
+  .buttons .btn-3 {
+    display: flex;
+    position: relative;
+    text-align: center;
+  }
+
+  .footer-container {
+    width: 725px;
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+  .footer-row {
+    display: inline;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footer-copyright {
+    font-size: 22px;
+    text-align: center;
+  }
+  .footer-developer {
+    font-size: 22px;
+  }
+
+  .logo-git {
+    position: relative;
+    left: 300px;
+  }
+  .logo-linkedin {
+    position: relative;
+    left: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1600px;
+  }
+
+  .box {
+    width: 940px;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  .logo {
+    width: 90px;
+    top: -40px;
+    left: 250px;
+  }
+  .title {
+    position: relative;
+    color: #ffd700;
+    font-size: 4em;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .input {
+    padding: 0 100px;
+  }
+
+  #box-1 {
+    width: 450px;
+    height: 250px;
+  }
+
+  #box-1::placeholder {
+    position: relative;
+    top: 100px;
+  }
+
+  .output {
+    padding: 30px 100px;
+  }
+
+  #box-2 {
+    width: 450px;
+    height: 250px;
+  }
+
+  #box-2::placeholder {
+    position: relative;
+    top: 100px;
+  }
+  .logo-atention {
+    position: relative;
+    width: 30px;
+    left: 10px;
+    top: 20px;
+  }
+  .atention {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Verdana";
+    width: 400px;
+    left: 70px;
+    bottom: 20px;
+  }
+  .container-buttons {
+    margin: 0;
+    padding: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .buttons .btn-1 {
+    left: 180px;
+  }
+  .buttons .btn-2 {
+    position: relative;
+    left: 680px;
+  }
+  .buttons .btn-3 {
+    left: 180px;
+  }
+
+  .footer-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-row {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-copyright {
+    font-size: 22px;
+    left: 260px;
+    top: 40px;
+  }
+  .footer-developer {
+    font-size: 22px;
+    left: 270px;
+    top: 15px;
+  }
+  .logo-git {
+    width: 30px;
+    top: 35px;
+    left: 300px;
+  }
+  .logo-linkedin {
+    width: 30px;
+    top: 5px;
+    left: 350px;
+  }
+}

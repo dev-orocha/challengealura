@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/cadeado-amarelo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/programa.css" />
+
+    <title>Cyber Security</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="box">
+        <h1 class="title">Cyber Security</h1>
+        <img
+          class="logo"
+          src="./src/images/cadeado-amarelo.png"
+          alt="Logo Cadeado Amarelo"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="input">
+          <textarea
+            id="box-1"
+            placeholder="Digite seu texto aqui..."
+            required
+          ></textarea>
+          <img
+            class="logo-atention"
+            src="./src/images/aviso.png"
+            alt="logo de atenção"
+          />
+          <p class="atention">
+            ATENÇÃO: Use somente letras maiúsculas e sem acento
+          </p>
+        </div>
+
+        <div class="output">
+          <textarea id="box-2" placeholder="Texto criptografado..."></textarea>
+        </div>
+      </section>
+
+      <section class="container-buttons">
+        <div class="buttons">
+          <button class="btn-1" onclick="criptografar()">Criptografar</button>
+          <button id="copy" class="btn-2" onclick="copy()">Copiar Texto</button>
+          <button class="btn-3" onclick="descriptografar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-row">
+        <p class="footer-copyright">© Copyright - 2023 -</p>
+        <p class="footer-developer">Desenvolvido por Felipe Rocha</p>
+        <div>
+          <a href="http://www.github.com"
+            ><img
+              class="logo-git"
+              src="./src/images/github.png"
+              alt="Logo github"
+            />
+          </a>
+
+          <a href="http://www.linkedin.com.br"
+            ><img
+              class="logo-linkedin"
+              src="./src/images/linkedin.png"
+              alt="Logo linkedin"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/javascript/main.js"></script>
+  </body>
+</html>
